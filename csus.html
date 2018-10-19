@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>Sir Ray</title>
+		<link rel="stylesheet" type="text/css" href="Styles/style.css">
+		<link rel="icon" href="Images/icon.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		
+		<button onclick="topfunction()" id="myBtn" title="Go To Top">Top</button>
+
+		<nav>
+			<ul>
+				<li><a class="a" href="home_li.html">Home</a></li>
+				<li><a class="a" href="about.html">About</a></li>
+				<li><a class="a" href="subjects.html">Subjects</a></li>
+				<li><a class="a" href="accounts.html">Accounts</a></li>
+				<li class="settings"><a href="settings.html"><img src="Images/settings.png" height="40px" width="40px"></a></li>
+				<li class="settings"><a class="a" href="index.html">Log Out</a></li>
+			</ul>
+		</nav>
+<center>
+		<div class="body">
+			<div>
+				<p class="yntlf">Account Successfully Created!!!</p>
+			</div>
+			<div>
+				<a href="home_li.html">
+					<p class="start">GO TO HOME</p>
+				</a>
+			</div>
+		</div>
+</center>
+		<script>
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					document.getElementById("myBtn").style.display = "block";
+				} else {
+					document.getElementById("myBtn").style.display = "none";
+				}
+			}
+
+			function topFunction() {
+				document.documentElement.scrollTop = 0;
+			}
+		</script>
+	</body>
+</html>
+		
